@@ -1,16 +1,115 @@
-# React + Vite
+# 🎲 Number Guesser Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive Number Guessing Game built with React. The player must guess a randomly generated number between 1 and 100 within a limited number of attempts.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Random number generation between 1 and 100
+* Maximum 7 attempts per round
+* Real-time feedback:
 
-## React Compiler
+  * Too High
+  * Too Low
+  * Correct Guess
+* Score system based on performance
+* Round history tracking
+* Total score calculation
+* Win/Loss statistics
+* Responsive and modern UI
+* Play Again functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
 
-## Expanding the ESLint configuration
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3 (Inline Styling)
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📊 Scoring System
+
+| Attempts | Score      |
+| -------- | ---------- |
+| 1 - 2    | 100 Points |
+| 3 - 4    | 75 Points  |
+| 5 - 6    | 50 Points  |
+| 7        | 25 Points  |
+
+## 🎮 How to Play
+
+1. Enter a number between 1 and 100.
+2. Click the **Guess** button.
+3. Receive feedback:
+
+   * 📉 Too High
+   * 📈 Too Low
+   * 🎉 Correct
+4. Guess the number within 7 attempts.
+5. Earn points based on the number of attempts used.
+6. Start a new round using the **Play Again** button.
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/student-nirajkumar/number-game.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd number-game
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+## 📁 Project Structure
+
+```text
+number-game/
+│
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🔮 Future Enhancements
+
+* Difficulty Levels (Easy, Medium, Hard)
+* Timer Challenge Mode
+* Leaderboard
+* Sound Effects
+* Dark/Light Theme Toggle
+* Local Storage Support
+
+## 👨‍💻 Author
+
+**Niraj Kumar**
+
+* GitHub: https://github.com/student-nirajkumar
+
+## 📄 License
+
+This project is open-source and available under the MIT License.
